@@ -29,7 +29,7 @@ namespace CMP1903_A1_2324
         {
             
            
-            int value = rand.Next(1, 7);
+            int value = rand.Next(1, 7);    //randomizes a number between 1 and 6
             return value;
           
         }
@@ -97,13 +97,13 @@ namespace CMP1903_A1_2324
         {
             for (int i = 0; i < 500; i++)
             {
-                int testvalue = TestDie.dice_roll();
+                int testvalue = TestDie.dice_roll();            //a test dice is rolled
 
-                Debug.Assert(testvalue < 7 && testvalue > 0);
+                Debug.Assert(testvalue < 7 && testvalue > 0);   //checks for values between 1-6
 
-                int testsum = TestDie.dice_roll();
+                int testsum = TestDie.dice_roll();              //adds tested die
 
-                Debug.Assert(testsum < 19 && testsum > 2);
+                Debug.Assert(testsum < 19 && testsum > 2);      //checks the sum cannot be over 18 or under 3
             
             }
         }
